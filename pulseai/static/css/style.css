@@ -1,0 +1,36 @@
+@media(max-width:565px){
+    .hero-text{
+        background-image: url('./../images/hero-img.jpg');
+        padding: 1rem;
+    }
+}
+
+
+.blog-details img{
+    display: block;
+    margin:auto;
+}
+.form-group{
+    margin-bottom: 8px;
+}
+.form-group input,
+.form-group select{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    outline-color: var(--primary-color);
+
+}
+input[type="radio"]{
+    display: inline;
+    width: auto;
+    transform: scale(1.5);
+    margin: 0px 5px;
+}
+.success{
+    color: green;
+}
+.error{
+    color:red;
+}

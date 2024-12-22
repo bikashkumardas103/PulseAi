@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block title %}contact{% endblock %}
+
+
+   <!-- contact_us.html -->
+{% block content %}
+<div class="hero-section">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out with any questions or feedback.</p>
+</div>
+
+<div class="content-section container">
+    <h2 class="text-center mb-5">Get in Touch</h2>
+    <form action="/submit-contact-form/" method="POST">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary b-5">Send Message</button>
+        </div>
+    </form>
+</div>
+
+<div class="content-section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 tp-5">Our Location</h2>
+        <div class="text-center">
+            <p>PulseAI Headquarters</p>
+            <p>Chandaka IndustrialEstate Bhubneswar, Tech City, 751024</p>
+            <p>Email: dbikashkumar2003@gmail.com.com | Phone: +91 7978046793</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
